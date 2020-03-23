@@ -38,9 +38,9 @@ document.addEventListener('DOMContentLoaded', function(e) {
 
         meridiem = 'am';
         if(hours > 12) {hour = hours - 12;meridiem = 'pm';}
+        else {hour = hours;}
         if(hours === 0) {hour = 12;}
         if(hour < 10) {hour = '0' + hour;}
-        if(hour >= 10 && hours <= 12) {hour = hours;}
         if(minutes < 10) {minute = '0' + minutes;}
         if(minutes >= 10) {minute = minutes;}
         if(seconds < 10) {second = '0' + seconds;}
