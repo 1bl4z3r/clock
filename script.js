@@ -37,8 +37,9 @@ document.addEventListener('DOMContentLoaded', function(e) {
         hoursHand.style.webkitTransform = `rotate(${hoursDegrees}deg)`;
 
         meridiem = 'am';
-        if(hours > 12) {hour = hours - 12;meridiem = 'pm';}
+        if(hours > 12) {hour = hours - 12;}
         else {hour = hours;}
+        if(hours >= 12){meridiem = 'pm';}
         if(hours === 0) {hour = 12;}
         if(hour < 10) {hour = '0' + hour;}
         if(minutes < 10) {minute = '0' + minutes;}
