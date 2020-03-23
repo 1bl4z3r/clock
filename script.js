@@ -46,9 +46,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
         if(seconds < 10) {second = '0' + seconds;}
         if(seconds >= 10) {second = seconds;}
 
-        digital.innerText = `[1bl4z3r]# ${hour}:${minute}.${second} ${meridiem}`;
-
-
+        digital.innerText = `${hour}:${minute}.${second} ${meridiem}`;
     }
     setInterval(setDate, 1000);
   })
